@@ -1,0 +1,31 @@
+{% load static %}
+
+<aside class="left-sidebar scrollable ps-container ps-theme-default ps-active-y" data-sidebarbg="skin5">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar">
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav" class="p-t-30">
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{% url 'home' %}" aria-expanded="false"><i class="mdi mdi-database"></i><span class="hide-menu">Dashboard</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{% url 'lewenilotu' %}" aria-expanded="false"><i class="mdi mdi-account-multiple"></i><span class="hide-menu">Lewenilotu</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-receipt"></i><span class="hide-menu">Wiliwili ena Vei-Valenilotu</span></a>
+                            <ul aria-expanded="false" class="collapse  first-level">
+                                <li class="sidebar-item"><a href="{% url 'duavata' %}" class="sidebar-link"><i class="mdi mdi-note-outline"></i><span class="hide-menu">Duavata</span></a></li>
+                                <li class="sidebar-item"><a href="{% url 'efiraca' %}" class="sidebar-link"><i class="mdi mdi-note-outline"></i><span class="hide-menu">Efiraca</span></a></li>
+                                <li class="sidebar-item"><a href="{% url 'jiovajaire' %}" class="sidebar-link"><i class="mdi mdi-note-outline"></i><span class="hide-menu">Jiova Jaire</span></a></li>
+                                <li class="sidebar-item"><a href="{% url 'kecisemani' %}" class="sidebar-link"><i class="mdi mdi-note-outline"></i><span class="hide-menu">Kecisemani</span></a></li>
+                                <li class="sidebar-item"><a href="{% url 'meeneimi' %}" class="sidebar-link"><i class="mdi mdi-note-outline"></i><span class="hide-menu">Meeneimi</span></a></li>
+                                <li class="sidebar-item"><a href="{% url 'mountsinai' %}" class="sidebar-link"><i class="mdi mdi-note-outline"></i><span class="hide-menu">Mount Sinai</span></a></li>
+                                <li class="sidebar-item"><a href="{% url 'nauluvatu' %}" class="sidebar-link"><i class="mdi mdi-note-outline"></i><span class="hide-menu">Nauluvatu</span></a></li>
+                                <li class="sidebar-item"><a href="{% url 'peceseita' %}" class="sidebar-link"><i class="mdi mdi-note-outline"></i><span class="hide-menu">Pecesaita</span></a></li>
+                                <li class="sidebar-item"><a href="{% url 'revcaleb' %}" class="sidebar-link"><i class="mdi mdi-note-outline"></i><span class="hide-menu">Rev Caleb</span></a></li>
+                                <li class="sidebar-item"><a href="{% url 'saika' %}" class="sidebar-link"><i class="mdi mdi-note-outline"></i><span class="hide-menu">Saika</span></a></li>
+                                <li class="sidebar-item"><a href="{% url 'vunivau' %}" class="sidebar-link"><i class="mdi mdi-note-outline"></i><span class="hide-menu">Vunivau</span></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+</aside>

@@ -1,0 +1,229 @@
+{% extends 'main.html' %}
+{% load static %}
+
+    {% block content %}
+       
+            <!-- ============================================================== -->
+            <!-- Bread crumb and right sidebar toggle -->
+            <!-- ============================================================== -->
+             <div class="page-breadcrumb">
+                <div class="row">
+                    <div class="col-12 d-flex no-block align-items-center">
+                        <h2 class="page-title">DATA-HUB Nai Wiliwili ena loma ni Tabacakacaka</h>
+                    </div>
+                </div>
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Bread crumb and right sidebar toggle -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- Container fluid  -->
+            <!-- ============================================================== -->
+            <div class="container-fluid">
+                <!-- ============================================================== -->
+                <!-- Wiliwili Cards  -->
+                <!-- ============================================================== -->
+                <div class="row">
+                    <!-- Column -->
+                    <div class="col-md-6 col-lg-12 col-xlg-3">
+                        <div class="card card-hover">
+                            <div class="box bg-info text-center">
+                                <h2 class="font-light text-white"><i class="mdi mdi-account-multiple-plus"></i></h2>
+                                <h3 class="text-white">Wiliwili ni Lewe ni Vavakoso taucoko ena loma ni Tabacakacaka</h3>
+                                <h1 class="text-white">{{ total_lewenilotu }}</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Column -->
+                    <div class="col-12 d-flex no-block align-items-center">
+                        <h4 class="page-title">Nai Wiliwili ni Veitokani ena loma ni Tabacakacaka</h4>
+                    </div>
+                    <div class="col-md-6 col-lg-3 col-xlg-3">
+                        <div class="card card-hover">
+                            <div class="box bg-cyan text-center">
+                                <h5 class="font-light text-black"><i class="mdi mdi-account-multiple"></i></h5>
+                                <h5 class="text-black">Sunday School</h5>
+                                <h5 class="text-black">{{ total_sundayschool }}</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Column -->
+                    <div class="col-md-6 col-lg-3 col-xlg-3">
+                        <div class="card card-hover">
+                            <div class="box bg-cyan text-center">
+                                <h5 class="font-light text-black"><i class="mdi mdi-account-multiple"></i></h3>
+                                <h5 class="text-black">Mataveitokani</h5>
+                                <h5 class="text-black">{{ total_myf }}</h5>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- Column -->
+                    <div class="col-md-6 col-lg-3 col-xlg-3">
+                        <div class="card card-hover">
+                            <div class="box bg-cyan text-center">
+                                <h5 class="font-light text-black"><i class="mdi mdi-account-multiple"></i></h5>
+                                <h5 class="text-black">Veitokani ni Marama</h5>
+                                <h5 class="text-black">{{ total_marama }}</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Column -->
+                    <div class="col-md-6 col-lg-3 col-xlg-3">
+                        <div class="card card-hover">
+                            <div class="box bg-cyan text-center">
+                                <h5 class="font-light text-black"><i class="mdi mdi-account-multiple"></i></h5>
+                                <h5 class="text-black">Veitokani ni Turaga</h5>
+                                <h5 class="text-black">{{ total_turaga }}</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 d-flex no-block align-items-center">
+                        <h4 class="page-title">Nai Wiliwili ni Tutu Vakalotu ena loma ni Tabacakacaka</h4>
+                    </div>
+                    <!-- Column -->
+                    <div class="col-md-6 col-lg-6 col-xlg-3">
+                        <div class="card card-hover">
+                            <div class="box bg-info text-center">
+                                <h5 class="font-light text-white"><i class="mdi  mdi-account-multiple"></i></h5>
+                                <h5 class="text-white">Siga Dina</h5>
+                                <h5 class="text-white">{{ total_sigadina }}</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Column -->
+                    <div class="col-md-6 col-lg-6 col-xlg-3">
+                        <div class="card card-hover">
+                            <div class="box bg-info text-center">
+                                <h5 class="font-light text-white"><i class="mdi  mdi-account-multiple"></i></h5>
+                                <h5 class="text-white">Siga Tuberi</h5>
+                                <h5 class="text-white">{{ total_sigatuberi }}</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 d-flex no-block align-items-center">
+                        <h4 class="page-title">Nai Wiliwili ni Tavi Vakalotu ena loma ni Tabacakacaka</h4>
+                    </div>
+                    <!-- Column -->
+                    <div class="col-md-6 col-lg-4 col-xlg-3">
+                        <div class="card card-hover">
+                            <div class="box bg-cyan text-center">
+                                <h2 class="font-light text-black"><i class="mdi  mdi-account-star"></i></h2>
+                                <h6 class="text-black">Talatala Vakacegu</h6>
+                                <h6 class="text-black">{{ total_talatalavakacegu }}</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Column -->
+                    <div class="col-md-6 col-lg-4 col-xlg-3">
+                        <div class="card card-hover">
+                            <div class="box bg-cyan text-center">
+                                <h2 class="font-light text-black"><i class="mdi  mdi-account-star"></i></h2>
+                                <h6 class="text-black">Talatala Yaco</h6>
+                                <h6 class="text-black">{{ total_talatalayaco }}</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Column -->
+                    <div class="col-md-6 col-lg-4 col-xlg-3">
+                        <div class="card card-hover">
+                            <div class="box bg-cyan text-center">
+                                <h2 class="font-light text-black"><i class="mdi  mdi-account-star"></i></h2>
+                                <h6 class="text-black">Talatala Vakatovolei</h6>
+                                <h6 class="text-black">{{ total_talatalavakatovolei }}</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Column -->
+                    <div class="col-md-6 col-lg-4 col-xlg-3">
+                        <div class="card card-hover">
+                            <div class="box bg-cyan text-center">
+                                <h2 class="font-light text-black"><i class="mdi  mdi-account-network"></i></h2>
+                                <h6 class="text-black">Vakatawa Vakacegu</h6>
+                                <h6 class="text-black">{{ total_vakatawavakacegu }}</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Column -->
+                    <div class="col-md-6 col-lg-4 col-xlg-3">
+                        <div class="card card-hover">
+                            <div class="box bg-cyan text-center">
+                                <h2 class="font-light text-black"><i class="mdi  mdi-account-network"></i></h2>
+                                <h6 class="text-black">Vakatawa Yaco</h6>
+                                <h6 class="text-black">{{ total_vakatawayaco }}</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Column -->
+                    <div class="col-md-6 col-lg-4 col-xlg-3">
+                        <div class="card card-hover">
+                            <div class="box bg-cyan text-center">
+                                <h2 class="font-light text-black"><i class="mdi  mdi-account-network"></i></h2>
+                                <h6 class="text-black">Vakatawa Cavuti</h6>
+                                <h6 class="text-black">{{ total_vakatawacavuti }}</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Column -->
+                    <div class="col-md-6 col-lg-4 col-xlg-3">
+                        <div class="card card-hover">
+                            <div class="box bg-cyan text-center">
+                                <h2 class="font-light text-black"><i class="mdi  mdi-account-network"></i></h2>
+                                <h6 class="text-black">Vakatawa Vakatovolei</h6>
+                                <h6 class="text-black">{{ total_vakatawavakatovolei }}</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Column -->
+                    <div class="col-md-6 col-lg-4 col-xlg-3">
+                        <div class="card card-hover">
+                            <div class="box bg-cyan text-center">
+                                <h2 class="font-light text-black"><i class="mdi  mdi-account-location"></i></h2>
+                                <h6 class="text-black">Dauvunau Vakacegu</h6>
+                                <h6 class="text-black">{{ total_dauvunauvakacegu }}</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Column -->
+                    <div class="col-md-6 col-lg-4 col-xlg-3">
+                        <div class="card card-hover">
+                            <div class="box bg-cyan text-center">
+                                <h2 class="font-light text-black"><i class="mdi  mdi-account-location"></i></h2>
+                                <h6 class="text-black">Dauvunau Yaco</h6>
+                                <h6 class="text-black">{{ total_dauvunauyaco }}</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Column -->
+                    <div class="col-md-6 col-lg-4 col-xlg-3">
+                        <div class="card card-hover">
+                            <div class="box bg-cyan text-center">
+                                <h2 class="font-light text-black"><i class="mdi  mdi-account-location"></i></h2>
+                                <h6 class="text-black">Dauvunau Vakatovolei</h6>
+                                <h6 class="text-black">{{ total_dauvunautovolei }}</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Column -->
+                    <div class="col-md-6 col-lg-4 col-xlg-3">
+                        <div class="card card-hover">
+                            <div class="box bg-cyan text-center">
+                                <h2 class="font-light text-black"><i class="mdi  mdi-account-settings"></i></h2>
+                                <h6 class="text-black">Daucaka Masumasu</h6>
+                                <h6 class="text-black">{{ total_daucakamasumasu }}</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Column -->
+                    <div class="col-md-6 col-lg-4 col-xlg-3">
+                        <div class="card card-hover">
+                            <div class="box bg-cyan text-center">
+                                <h2 class="font-light text-black"><i class="mdi  mdi-account-multiple"></i></h2>
+                                <h6 class="text-black">Leweni Vavakoso</h6>
+                                <h6 class="text-black">{{ total_lewenivavakoso }}</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>                           
+            </div>
+                       
+    {% endblock content %} 
